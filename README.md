@@ -3,7 +3,7 @@
 
 [//]: # (Image References)
 
-[image1]: ./Images/deceleration01.gif "Desaceleración Abrupta"
+[image1]: deceleration01.gif "Desaceleración Abrupta"
 [image2]: ./Images/deceleration02.gif "Desaceleración Sutil"
 [image3]: ./Images/crash_wtout.gif "Desaceleración Sutil"
 [image4]: ./Images/crash_with.gif "Desaceleración Sutil"
