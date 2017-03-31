@@ -12,9 +12,9 @@
 [image7]: ./Images/crash_data.png "Datos"
 [image8]: ./Images/function.png "Datos y Curva"
 [image9]: ./Images/crash_airbag.png "Datos y Curva"
-[eq_02]: ./Images/crash_eq_02.png "Ecuación"
-[eq_03]: ./Images/crash_eq_03.png "Ecuación"
-[eq_04]: ./Images/crash_eq_04.png "Ecuación"
+[eq_02]: ./Images/eq_02.png "Ecuación"
+[eq_03]: ./Images/eq_03.png "Ecuación"
+[eq_04]: ./Images/eq_04.png "Ecuación"
 
 
 
@@ -71,12 +71,12 @@ Algunos valores HIC a considerar:
 
 ## Modelado de un choque
 ### Sin bolsas de aire
-La siguiente figura muestra los datos obtenidos por un acelerómetro en un choque, donde el eje horizontal se encuentra el tiempo *(ms)* y el eje vertical muestra valores de aceleración (*g*). La región de desaceleración más crítica se muestra en el rectángulo de color rosado, $t_1=50$ ms y $t_2=105$ ms, para estos valores el valor HIC es de 684.
+La siguiente figura muestra los datos obtenidos por un acelerómetro en un choque, donde el eje horizontal se encuentra el tiempo *(ms)* y el eje vertical muestra valores de aceleración (*g*). La región de desaceleración más crítica se muestra en el rectángulo de color rosado, t<sub>1</sub>=50 *ms* y t<sub>2</sub>=105 *ms*, para estos valores el valor HIC es de 684.
 ![alt text][image7]
 
 Para generalizar y obtener un modelo matemático del sistema, ajustaremos los valores medidos por el acelerómetro por medio de una curva. En este caso utilizaremos la función:
 
-$$a(t)= \frac{16400}{(t-68)^2+400} + \frac{1480}{(t-93)^2+18}$$
+<!---$$a(t)= \frac{16400}{(t-68)^2+400} + \frac{1480}{(t-93)^2+18}$$-->
 ![alt text][eq_02]
 
 La gráfica de la función $a(t)$ junto con los valores medidos se muestra a continuación:
@@ -85,19 +85,19 @@ La gráfica de la función $a(t)$ junto con los valores medidos se muestra a con
 Al construir un modelo con esta función, se puede obtener la siguiente integral:
 
 
-$$HIC = (105-50)\Bigg[\frac{1}{105-50}\int_{50}^{105}\Bigg(\frac{16400}{(t-68)^2+400} + \frac{1480}{(t-93)^2+18}\Bigg)dt\Bigg]^{2.5}=710$$
+<!---$$HIC = (105-50)\Bigg[\frac{1}{105-50}\int_{50}^{105}\Bigg(\frac{16400}{(t-68)^2+400} + \frac{1480}{(t-93)^2+18}\Bigg)dt\Bigg]^{2.5}=710$$-->
 ![alt text][eq_03]
 
 Los resultados obtenidos muestran que en promedio el valor HIC se encuentra en 697, lo cual está muy cerca de de una lesión severa.
 
 
 ### Con bolsas de aire y cinturón
-De forma comparativa para un choque donde existe el uso de bolsas de aire y cinturón de seguridad, como el mostrado en la figura, para $t_1=45$ ms y $t_2=100$ ms, se obtienen los siguientes resultados:
+De forma comparativa para un choque donde existe el uso de bolsas de aire y cinturón de seguridad, como el mostrado en la figura, para t<sub>1</sub>=45 *ms* y t<sub>2</sub>=100 *ms*, se obtienen los siguientes resultados:
 * Utilizando los datos reales se obtiene un HIC = 296.
 
 ![alt text][image9]
 
-* Utilizando el modelo matemático, con $a(t)= \frac{22000}{(t-74)^2+500}$
+* Utilizando el modelo matemático, con <!---$a(t)= \frac{22000}{(t-74)^2+500}$-->
 ![alt text][eq_04]
 
 se obtine un valor HIC = 312.
@@ -133,7 +133,7 @@ Para este caso no se sabe si los datos proporcionados son para un choque con o s
 
 ### Desarrollo
 La elaboración del proyecto consiste en lo siguiente para cada conjunto de archivos CSV:
-1. Modelar sus datos con una función característica $a(t)$
+1. Modelar sus datos con una función característica *a(t)*
 2. Determinar el área bajo la curva de los datos proporcionados y de la función característica
 3. Determinar los valores HIC para los valores proporcionados y la función característica (en el caso de los valores desconocidos también se debe determinar a cuál grupo pertenecen)
 
@@ -149,7 +149,7 @@ El proyecto debe de ser elaborado a computadora, con sus respectivas gráficas y
 Cada grupo debe elaborar una presentación de 5 minutos de duración donde exponga la modelación del problema, sus resultados y conclusiones.
 
 ### Entrega
-* Reporte: 28 de Mayo
+* Reporte: 28 de Abril
 * Presentación: Por definir
 
 ## Referencias:
