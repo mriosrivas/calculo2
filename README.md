@@ -12,6 +12,9 @@
 [image7]: ./Images/crash_data.png "Datos"
 [image8]: ./Images/function.png "Datos y Curva"
 [image9]: ./Images/crash_airbag.png "Datos y Curva"
+[eq_02]: ./Images/crash_eq_02.png "Ecuación"
+[eq_03]: ./Images/crash_eq_03.png "Ecuación"
+[eq_04]: ./Images/crash_eq_04.png "Ecuación"
 
 
 
@@ -74,6 +77,7 @@ La siguiente figura muestra los datos obtenidos por un acelerómetro en un choqu
 Para generalizar y obtener un modelo matemático del sistema, ajustaremos los valores medidos por el acelerómetro por medio de una curva. En este caso utilizaremos la función:
 
 $$a(t)= \frac{16400}{(t-68)^2+400} + \frac{1480}{(t-93)^2+18}$$
+![alt text][eq_02]
 
 La gráfica de la función $a(t)$ junto con los valores medidos se muestra a continuación:
 ![alt text][image8]
@@ -82,6 +86,7 @@ Al construir un modelo con esta función, se puede obtener la siguiente integral
 
 
 $$HIC = (105-50)\Bigg[\frac{1}{105-50}\int_{50}^{105}\Bigg(\frac{16400}{(t-68)^2+400} + \frac{1480}{(t-93)^2+18}\Bigg)dt\Bigg]^{2.5}=710$$
+![alt text][eq_03]
 
 Los resultados obtenidos muestran que en promedio el valor HIC se encuentra en 697, lo cual está muy cerca de de una lesión severa.
 
@@ -92,7 +97,10 @@ De forma comparativa para un choque donde existe el uso de bolsas de aire y cint
 
 ![alt text][image9]
 
-* Utilizando el modelo matemático, con $a(t)= \frac{22000}{(t-74)^2+500}$, se obtine un valor HIC = 312.
+* Utilizando el modelo matemático, con $a(t)= \frac{22000}{(t-74)^2+500}$
+![alt text][eq_04]
+
+se obtine un valor HIC = 312.
 
 ### Conclusión
 Se puede notar que la implementación de bolsas de aire y el uso del cinturón de seguridad puede disminuir el riesgo de una lesión severa a una contusión en un accidente de tránsito.
